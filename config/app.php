@@ -65,7 +65,10 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE', 'Asia/Manila'),
+
+    // Shows the one-click demo account buttons on the login card.
+    'demo_login' => (bool) env('DEMO_LOGIN', false),
 
     /*
     |--------------------------------------------------------------------------

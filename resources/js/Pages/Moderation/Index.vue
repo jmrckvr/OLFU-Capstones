@@ -1,9 +1,0 @@
-<script setup>
-import { Head, router, useForm } from '@inertiajs/vue3';
-import AppLayout from '../../Layouts/AppLayout.vue';
-defineProps({ projects: Object });
-function decide(project, status) { const reason = window.prompt(`Reason for ${status}:`, 'Reviewed for repository content standards'); if (reason === null) return; router.patch(`/moderation/${project.id}`, { status, reason }); }
-</script>
-<template>
-    <Head title="Moderation queue" /><AppLayout><div class="mx-auto max-w-7xl p-6 lg:p-10"><p class="text-sm font-semibold text-olfu">CONTENT MODERATION</p><h1 class="mt-1 text-3xl font-bold">Moderation queue</h1><p class="mt-2 text-slate-500">Review content for relevance, safety, duplicates, and repository standards—not academic quality.</p><div class="mt-8 space-y-4"><article v-for="project in projects.data" :key="project.id" class="rounded-xl border border-slate-200 bg-white p-6"><div class="flex flex-col justify-between gap-4 lg:flex-row"><div><div class="flex items-center gap-3"><h2 class="text-lg font-bold">{{ project.title }}</h2><span class="rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-700">{{ project.status }}</span></div><p class="mt-2 text-sm text-slate-500">{{ project.description }}</p><p class="mt-3 text-xs text-slate-400">{{ project.owner?.name }} · {{ project.program }} · {{ project.files?.length }} files</p></div><div class="flex shrink-0 gap-2"><button class="btn-primary" @click="decide(project, 'published')">Publish</button><button class="btn-secondary" @click="decide(project, 'returned')">Return</button><button class="rounded-lg border border-red-200 px-4 py-2 text-sm font-semibold text-red-700" @click="decide(project, 'hidden')">Hide</button></div></div></article><p v-if="!projects.data?.length" class="rounded-xl border border-dashed border-slate-300 p-10 text-center text-slate-500">The moderation queue is clear.</p></div></div></AppLayout>
-</template>

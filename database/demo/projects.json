@@ -1,0 +1,173 @@
+{
+    "_comment": "Sample data for `npm run seed:demo`. Read by scripts/demo-assets.mjs (draws covers + PDFs) and database/seeders/DemoSeeder.php (fills MySQL). Day numbers are 'days ago', so the dashboard always shows a fresh week.",
+    "password": "password",
+    "users": [
+        { "name": "Juan Dela Cruz", "email": "juan.delacruz@olfu.edu.ph", "role": "student" },
+        { "name": "Ana Reyes", "email": "ana.reyes@olfu.edu.ph", "role": "student" },
+        { "name": "Carlo Mendoza", "email": "carlo.mendoza@olfu.edu.ph", "role": "student" },
+        { "name": "Miguel Santos", "email": "miguel.santos@olfu.edu.ph", "role": "student" },
+        { "name": "Jessa Cruz", "email": "jessa.cruz@olfu.edu.ph", "role": "student" },
+        { "name": "Kevin Ramos", "email": "kevin.ramos@olfu.edu.ph", "role": "student" },
+        { "name": "Paolo Rivera", "email": "paolo.rivera@olfu.edu.ph", "role": "student", "inactive": true },
+        { "name": "Prof. Maria Santos", "email": "msantos@olfu.edu.ph", "role": "coordinator" },
+        { "name": "Jeffrey F. Calim", "email": "jcalim@olfu.edu.ph", "role": "administrator" }
+    ],
+    "projects": [
+        {
+            "slug": "barangay-health-records", "owner": "ana.reyes@olfu.edu.ph", "status": "approved",
+            "title": "Barangay Health Records System", "proponents": "Ana Reyes, Carlo Mendoza, Liza Tan",
+            "program": "BSIT", "academic_year": "2025–2026", "category": "Information System",
+            "adviser": "Prof. D. Navarro", "technology": "PHP, MySQL, Bootstrap",
+            "description": "Digital patient records and check-up history for barangay health centers.",
+            "abstract": "This study presents a web-based health records system for barangay health centers that replaces paper logbooks with a searchable database of residents, check-ups and immunizations.\n\nHealth workers can register residents, record consultations and print monthly reports for the city health office. The system aims to shorten record retrieval time and reduce lost or duplicated records.",
+            "source_url": "https://github.com/olfu-ccs/barangay-health-records",
+            "submitted": 4, "reviewed": 3, "downloads": 42, "art": "database"
+        },
+        {
+            "slug": "smart-classroom-attendance", "owner": "miguel.santos@olfu.edu.ph", "status": "approved", "restricted": true,
+            "title": "Smart Classroom Attendance Tracker", "proponents": "Miguel Santos, Paula Lim",
+            "program": "BSCS", "academic_year": "2025–2026", "category": "IoT / Embedded",
+            "adviser": "Prof. D. Navarro", "technology": "Arduino, C++, MySQL",
+            "description": "RFID-based attendance logging with a web dashboard for instructors.",
+            "abstract": "This study presents an RFID-based attendance system for classrooms that automatically records student presence when an ID card is tapped on a reader.\n\nAttendance logs are stored in a MySQL database and shown in a web dashboard where instructors can view, filter and review attendance per class session. The system aims to reduce manual checking, save class time and improve the accuracy of attendance records.",
+            "source_url": "https://github.com/olfu-ccs/smart-attendance",
+            "submitted": 6, "reviewed": 5, "downloads": 31, "art": "chip"
+        },
+        {
+            "slug": "campus-event-app", "owner": "jessa.cruz@olfu.edu.ph", "status": "approved",
+            "title": "Campus Event Management App", "proponents": "Jessa Cruz, Rafael Ong, Nina Bautista, Leo Garcia",
+            "program": "BSIT", "academic_year": "2024–2025", "category": "Mobile Application",
+            "adviser": "Prof. R. Villanueva", "technology": "Kotlin, Firebase",
+            "description": "Android app for announcing, registering for and checking in to campus events.",
+            "abstract": "This study presents an Android application that lets student organizations publish campus events, accept registrations and check attendees in with QR codes.\n\nOrganizers see live headcounts while students receive reminders before each event. Results show faster check-in and higher attendance than paper sign-up sheets.",
+            "source_url": "https://github.com/olfu-ccs/campus-events",
+            "submitted": 40, "reviewed": 38, "downloads": 57, "art": "phone"
+        },
+        {
+            "slug": "online-enrollment-assistant", "owner": "kevin.ramos@olfu.edu.ph", "status": "approved",
+            "title": "Online Enrollment Assistant", "proponents": "Kevin Ramos, Trisha Uy",
+            "program": "BSIT", "academic_year": "2024–2025", "category": "Web Application",
+            "adviser": "Prof. M. Aquino", "technology": "Laravel, Vue, MySQL",
+            "description": "Guided online enrollment with subject advising and slot monitoring.",
+            "abstract": "This study presents a web application that guides students through enrollment step by step: checking prerequisites, suggesting a block schedule and showing remaining slots in real time.\n\nThe registrar can monitor enrollment progress per program. Testing showed fewer advising errors and shorter enrollment lines.",
+            "source_url": "https://github.com/olfu-ccs/enrollment-assistant",
+            "submitted": 2, "reviewed": 1, "downloads": 24, "art": "browser"
+        },
+        {
+            "slug": "crop-disease-detection", "owner": "carlo.mendoza@olfu.edu.ph", "status": "approved",
+            "title": "Rice Leaf Disease Detection Using CNN", "proponents": "Carlo Mendoza, Bea Fernandez",
+            "program": "BSCS", "academic_year": "2024–2025", "category": "Data Science / AI",
+            "adviser": "Prof. L. Ramirez", "technology": "Python, TensorFlow, Flask",
+            "description": "Identifies common rice leaf diseases from a phone photo.",
+            "abstract": "This study trains a convolutional neural network to recognize four common rice leaf diseases from smartphone photos, reaching 93% accuracy on a held-out test set.\n\nA simple web interface lets farmers upload a photo and receive the likely disease with treatment advice from the Department of Agriculture.",
+            "source_url": "https://github.com/olfu-ccs/rice-leaf-cnn",
+            "submitted": 1, "reviewed": 0, "downloads": 18, "art": "network"
+        },
+        {
+            "slug": "flood-alert-sms", "owner": "miguel.santos@olfu.edu.ph", "status": "approved",
+            "title": "Flood Alert SMS Notification System", "proponents": "Miguel Santos, Jomar Dizon, Kate Salazar",
+            "program": "BSCS", "academic_year": "2023–2024", "category": "IoT / Embedded",
+            "adviser": "Prof. R. Villanueva", "technology": "ESP32, GSM Module, PHP",
+            "description": "Water-level sensors that text residents when flooding starts.",
+            "abstract": "This study presents a low-cost water-level monitoring device that sends SMS alerts to registered residents when flood levels cross set thresholds.\n\nReadings are also uploaded to a dashboard for the barangay disaster office, helping responders act earlier during heavy rain.",
+            "source_url": "",
+            "submitted": 300, "reviewed": 296, "downloads": 66, "art": "chip"
+        },
+        {
+            "slug": "pharmacy-pos", "owner": "kevin.ramos@olfu.edu.ph", "status": "approved",
+            "title": "Pharmacy Inventory and Point-of-Sale System", "proponents": "Kevin Ramos, Mae Torres",
+            "program": "BSIT", "academic_year": "2023–2024", "category": "Information System",
+            "adviser": "Prof. M. Aquino", "technology": "C#, .NET, SQL Server",
+            "description": "Stock tracking with expiry alerts and a fast checkout counter.",
+            "abstract": "This study presents an inventory and point-of-sale system for small pharmacies that tracks stock by batch, warns about medicines nearing expiry and speeds up checkout with barcode scanning.\n\nOwners receive daily sales and low-stock reports.",
+            "source_url": "",
+            "submitted": 320, "reviewed": 318, "downloads": 39, "art": "database"
+        },
+        {
+            "slug": "tagalog-learning-game", "owner": "jessa.cruz@olfu.edu.ph", "status": "approved",
+            "title": "Salita: A Tagalog Learning Game for Kids", "proponents": "Jessa Cruz, Nico Valdez",
+            "program": "BSCS", "academic_year": "2025–2026", "category": "Game Development",
+            "adviser": "Prof. L. Ramirez", "technology": "Unity, C#",
+            "description": "A word-building adventure game for Grade 1–3 learners.",
+            "abstract": "This study presents an educational game where young learners build Tagalog words to unlock levels in a story set in a Filipino town.\n\nTeachers can view progress per learner. A two-week classroom trial showed higher vocabulary scores than the control group.",
+            "source_url": "https://github.com/olfu-ccs/salita-game",
+            "submitted": 5, "reviewed": 4, "downloads": 12, "art": "gamepad"
+        },
+        {
+            "slug": "thesis-archive-chatbot", "owner": "ana.reyes@olfu.edu.ph", "status": "approved",
+            "title": "Thesis Archive Chatbot", "proponents": "Ana Reyes, Gino Pascual",
+            "program": "BSCS", "academic_year": "2022–2023", "category": "Data Science / AI",
+            "adviser": "Prof. D. Navarro", "technology": "Python, Rasa, PostgreSQL",
+            "description": "Ask questions about past theses in plain language.",
+            "abstract": "This study presents a chatbot that answers questions about past theses in the college library, such as finding related studies by topic, adviser or year.\n\nThe bot uses intent classification and keyword search over thesis abstracts.",
+            "source_url": "",
+            "submitted": 700, "reviewed": 695, "downloads": 81, "art": "network"
+        },
+        {
+            "slug": "clinic-appointment-scheduler", "owner": "carlo.mendoza@olfu.edu.ph", "status": "approved",
+            "title": "Clinic Appointment Scheduler", "proponents": "Carlo Mendoza, Liza Tan",
+            "program": "BSIT", "academic_year": "2022–2023", "category": "Web Application",
+            "adviser": "Prof. M. Aquino", "technology": "Node.js, Express, MongoDB",
+            "description": "Online booking and queue management for a university clinic.",
+            "abstract": "This study presents an online appointment and queue system for a university clinic. Students book a slot, receive a queue number and get notified when it is their turn.\n\nClinic staff see the day's schedule and walk-in queue on one screen.",
+            "source_url": "https://github.com/olfu-ccs/clinic-scheduler",
+            "submitted": 690, "reviewed": 686, "downloads": 29, "art": "browser"
+        },
+        {
+            "slug": "library-book-reservation", "owner": "juan.delacruz@olfu.edu.ph", "status": "pending",
+            "title": "Library Book Reservation System", "proponents": "Juan Dela Cruz, Ana Reyes",
+            "program": "BSIT", "academic_year": "2026–2027", "category": "Web Application",
+            "adviser": "Prof. D. Navarro", "technology": "PHP, MySQL",
+            "description": "Lets students reserve books and track due dates.",
+            "abstract": "This study presents a web-based system that lets students reserve library books online and track due dates.\n\nIt aims to reduce waiting time at the library counter and help students avoid overdue returns through clear reservation status and due-date reminders.",
+            "source_url": "https://github.com/olfu-ccs/library-reservation",
+            "submitted": 1, "art": "browser"
+        },
+        {
+            "slug": "parking-slot-finder", "owner": "ana.reyes@olfu.edu.ph", "status": "pending",
+            "title": "Campus Parking Slot Finder", "proponents": "Ana Reyes, Ramon Cruz",
+            "program": "BSCS", "academic_year": "2026–2027", "category": "IoT / Embedded",
+            "adviser": "Prof. R. Villanueva", "technology": "Raspberry Pi, Python, Flutter",
+            "description": "Ultrasonic sensors show free parking slots on a mobile app.",
+            "abstract": "This study presents a parking guidance system that detects occupied slots with ultrasonic sensors and shows free slots on a mobile app in real time.\n\nIt aims to reduce the time drivers spend circling the campus parking area.",
+            "source_url": "",
+            "submitted": 0, "art": "chip"
+        },
+        {
+            "slug": "alumni-tracer", "owner": "carlo.mendoza@olfu.edu.ph", "status": "pending",
+            "title": "CCS Alumni Tracer Portal", "proponents": "Carlo Mendoza, Joy Navarro",
+            "program": "BSIT", "academic_year": "2026–2027", "category": "Information System",
+            "adviser": "Prof. M. Aquino", "technology": "Laravel, MySQL, Chart.js",
+            "description": "Tracks graduates' employment for accreditation reports.",
+            "abstract": "This study presents a portal where CCS graduates update their employment status so the college can produce tracer study reports for accreditation.\n\nCharts summarize employment rate, time-to-hire and job alignment per batch.",
+            "source_url": "",
+            "submitted": 3, "art": "database"
+        },
+        {
+            "slug": "scholarship-tracking", "owner": "juan.delacruz@olfu.edu.ph", "status": "returned",
+            "title": "Scholarship Tracking Portal", "proponents": "Juan Dela Cruz, Paolo Rivera",
+            "program": "BSIT", "academic_year": "2026–2027", "category": "Web Application",
+            "adviser": "Prof. D. Navarro", "technology": "Laravel, MySQL",
+            "description": "Scholarship applications, requirements and grade monitoring in one place.",
+            "abstract": "This study presents a portal where students apply for scholarships, upload requirements and see their application status, while the scholarship office monitors grade requirements each semester.",
+            "source_url": "",
+            "submitted": 5, "reviewed": 2,
+            "feedback": "Please add the system's ERD and the user acceptance testing results (Chapter 4) before resubmitting.",
+            "art": "browser"
+        },
+        {
+            "slug": "thesis-topic-recommender", "owner": "juan.delacruz@olfu.edu.ph", "status": "draft",
+            "title": "Thesis Topic Recommender", "proponents": "Juan Dela Cruz",
+            "program": "BSCS", "academic_year": "2026–2027", "category": "Data Science / AI",
+            "adviser": "", "technology": "Python, scikit-learn",
+            "description": "Suggests capstone topics based on a student's interests and past projects.",
+            "abstract": "",
+            "source_url": "",
+            "art": "network"
+        }
+    ],
+    "announcements": [
+        { "by": "msantos@olfu.edu.ph", "days": 2, "message": "Capstone uploads close on the last Friday of the month. Submit complete files to avoid resubmission." },
+        { "by": "jcalim@olfu.edu.ph", "days": 6, "message": "The repository now supports PDF preview: open a project and click the eye icon next to a file." }
+    ]
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs><linearGradient id="g-tagalog-learning-game" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a3b00"/><stop offset="1" stop-color="#c26a10"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#g-tagalog-learning-game)"/><circle cx="-182" cy="-241" r="28" fill="#fff" opacity="0.04"/><circle cx="-523" cy="-173" r="-1" fill="#fff" opacity="0.065"/><circle cx="-66" cy="-381" r="-16" fill="#fff" opacity="0.09"/><circle cx="-209" cy="-433" r="-23" fill="#fff" opacity="0.04"/><circle cx="-227" cy="-109" r="18" fill="#fff" opacity="0.065"/>
+  <path d="M0 380 C 200 340 380 400 560 370 S 760 340 800 350 V450 H0 Z" fill="#000" opacity=".12"/>
+  
+            <g transform="translate(230 110)">
+              <path d="M90 0 H250 C320 0 350 60 360 120 C372 190 350 240 310 240 C275 240 260 200 230 185 H110 C80 200 65 240 30 240 C-10 240 -32 190 -20 120 C-10 60 20 0 90 0 Z" fill="#fff"/>
+              <rect x="62" y="80" width="70" height="22" rx="6" fill="#c26a10"/><rect x="86" y="56" width="22" height="70" rx="6" fill="#c26a10"/>
+              <circle cx="250" cy="70" r="15" fill="#c26a10"/><circle cx="285" cy="104" r="15" fill="#fde3bf"/><circle cx="215" cy="104" r="15" fill="#fde3bf"/><circle cx="250" cy="138" r="15" fill="#c26a10" opacity=".6"/>
+            </g>
+            <path transform="translate(150 80)" d="M0 -16 L4.8 -4.8 L16 0 L4.8 4.8 L0 16 L-4.8 4.8 L-16 0 L-4.8 -4.8 Z" fill="#fff" opacity=".85"/><path transform="translate(650 90)" d="M0 -12 L3.5999999999999996 -3.5999999999999996 L12 0 L3.5999999999999996 3.5999999999999996 L0 12 L-3.5999999999999996 3.5999999999999996 L-12 0 L-3.5999999999999996 -3.5999999999999996 Z" fill="#fff" opacity=".85"/><path transform="translate(680 330)" d="M0 -18 L5.3999999999999995 -5.3999999999999995 L18 0 L5.3999999999999995 5.3999999999999995 L0 18 L-5.3999999999999995 5.3999999999999995 L-18 0 L-5.3999999999999995 -5.3999999999999995 Z" fill="#fff" opacity=".85"/><path transform="translate(130 340)" d="M0 -10 L3 -3 L10 0 L3 3 L0 10 L-3 3 L-10 0 L-3 -3 Z" fill="#fff" opacity=".85"/>
+</svg>
