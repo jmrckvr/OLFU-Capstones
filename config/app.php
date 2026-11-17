@@ -68,7 +68,8 @@ return [
     'timezone' => env('APP_TIMEZONE', 'Asia/Manila'),
 
     // Shows the one-click demo account buttons on the login card.
-    'demo_login' => (bool) env('DEMO_LOGIN', false),
+    // If DEMO_LOGIN is missing from .env (e.g. an older .env), it's on for local PCs and off in production.
+    'demo_login' => (bool) env('DEMO_LOGIN', env('APP_ENV', 'production') === 'local'),
 
     /*
     |--------------------------------------------------------------------------

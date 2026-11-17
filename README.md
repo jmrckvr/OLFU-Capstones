@@ -44,7 +44,9 @@ Built with **Laravel 12** (PHP) + **Vue 3** (through Inertia), and stores its da
 | Research Coordinator | msantos@olfu.edu.ph |
 | Administrator | jcalim@olfu.edu.ph |
 
-The one-click demo buttons on the login card appear only while `DEMO_LOGIN=true` in `.env`. Set it to `false` for real use.
+The one-click demo buttons on the login card appear while `DEMO_LOGIN=true` in `.env` (if the line is missing, they show when `APP_ENV=local`). Set it to `false` for real use.
+
+> **Already had a `.env` from before?** Git doesn't update `.env`. If the demo buttons don't show, add `DEMO_LOGIN=true` to it and run `php artisan config:clear`.
 
 ### Demo data: `npm run seed:demo`
 
